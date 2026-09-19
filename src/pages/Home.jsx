@@ -5,11 +5,9 @@ import { useState } from "react";
 import "./home.scss";
 function Home({ search }) {
 
-  const visible = products.filter((p) => {
-    const byTitle = p.title.toLowerCase().includes(search.toLowerCase());
-    const byCategory = category === "all" || p.category === category;
-    return byTitle && byCategory;
-  });
+  const visible = products.filter((product) =>
+  product.title.toLowerCase().includes(search.toLowerCase())
+)
 
   return (
     <div>
