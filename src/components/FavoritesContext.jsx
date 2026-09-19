@@ -10,7 +10,7 @@ function Favoritess() {
       return []
     }
 
-  
+    return saved.filter((id) => Number.isInteger(id))
   } catch {
     return []
   }

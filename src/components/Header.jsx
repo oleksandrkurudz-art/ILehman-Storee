@@ -51,11 +51,11 @@ function Header({ search, setSearch }) {
         </nav>
 
         <div className="header__actions">
-          <NavLink to="/favorites" className="header__icon" aria-label="Обране">
+          <NavLink to="/favorites" className="header__icon">
             <HeartIcon />
           </NavLink>
 
-          <NavLink to="/cart" className="header__icon" aria-label="Кошик">
+          <NavLink to="/cart" className="header__icon">
             <CartIcon />
             {totalCount > 0 && (
               <span className="header__badge">{totalCount}</span>

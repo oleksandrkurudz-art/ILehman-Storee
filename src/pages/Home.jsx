@@ -1,10 +1,9 @@
-import { products, categories } from "../data/products";
+import { products } from "../data/products";
 import ProductCard from "../components/ProductCard";
 import Hero from "../components/Hero";
 import { useState } from "react";
 import "./home.scss";
 function Home({ search }) {
-  const [category, setCategory] = useState("all");
 
   const visible = products.filter((p) => {
     const byTitle = p.title.toLowerCase().includes(search.toLowerCase());

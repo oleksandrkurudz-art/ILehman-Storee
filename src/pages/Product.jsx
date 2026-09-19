@@ -65,7 +65,6 @@ function Product() {
             <div className="product__actions">
               <button
                 className="product__favorite"
-                aria-pressed={isFavorite}
                 onClick={() => toggleFavorite(product.id)}
               >
                 {isFavorite ? "Видалити з обраного" : "Додати в обране"}

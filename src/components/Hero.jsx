@@ -15,7 +15,7 @@ function Hero() {
             {" "}
             Більше можливостей у кожному дотику.
           </p>
-          <Link to="/" className="hero__button">
+          <Link to="/product/7" className="hero__button">
             Купуйте зараз
           </Link>
         </div>
