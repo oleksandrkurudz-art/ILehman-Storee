@@ -1,0 +1,46 @@
+@use 'variable' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  color: $text;
+  background: $bg;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+.app {
+  flex: 1;
+  padding: 0 0 40px;
+}
+
+.container {
+  max-width: $container;
+  margin: 0 auto;
+  padding: 0 $side;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
