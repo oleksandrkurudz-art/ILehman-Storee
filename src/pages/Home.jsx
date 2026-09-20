@@ -4,10 +4,9 @@ import Hero from "../components/Hero";
 import { useState } from "react";
 import "./home.scss";
 function Home({ search }) {
-
   const visible = products.filter((product) =>
-  product.title.toLowerCase().includes(search.toLowerCase())
-)
+    product.title.toLowerCase().includes(search.toLowerCase()),
+  );
 
   return (
     <div>

@@ -20,29 +20,18 @@ function CartItem({ item }) {
       </div>
 
       <div className="cart-item__quantity">
-        <button
-          onClick={() => setQty(item.id, item.qty - 1)}
-        >
-          −
-        </button>
+        <button onClick={() => setQty(item.id, item.qty - 1)}>−</button>
 
         <span>{item.qty}</span>
 
-        <button
-          onClick={() => setQty(item.id, item.qty + 1)}
-        >
-          +
-        </button>
+        <button onClick={() => setQty(item.id, item.qty + 1)}>+</button>
       </div>
 
       <strong className="cart-item__total">
         {formatPrice(item.price * item.qty)}
       </strong>
 
-      <button
-        className="cart-item__remove"
-        onClick={() => removeItem(item.id)}
-      >
+      <button className="cart-item__remove" onClick={() => removeItem(item.id)}>
         <svg
           width="20"
           height="20"

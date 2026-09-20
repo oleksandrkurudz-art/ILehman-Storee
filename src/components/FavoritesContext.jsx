@@ -4,15 +4,15 @@ const FavoritesContext = createContext(null);
 
 function Favoritess() {
   try {
-    const saved = JSON.parse(localStorage.getItem('favorites'))
+    const saved = JSON.parse(localStorage.getItem("favorites"));
 
     if (!Array.isArray(saved)) {
-      return []
+      return [];
     }
 
-    return saved.filter((id) => Number.isInteger(id))
+    return saved.filter((id) => Number.isInteger(id));
   } catch {
-    return []
+    return [];
   }
 }
 export function FavoritesProvider({ children }) {

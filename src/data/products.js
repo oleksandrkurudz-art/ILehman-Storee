@@ -1,9 +1,5 @@
 export const categories = [
   { id: 'iphone', title: 'iPhone' },
-  { id: 'headphones', title: 'Навушники' },
-  { id: 'keyboards', title: 'Клавіатури' },
-  { id: 'mice', title: 'Миші' },
-  { id: 'monitors', title: 'Монітори' },
 ]
 
 export const products = [
