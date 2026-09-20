@@ -1,0 +1,121 @@
+@use '../styles/variable' as *;
+
+.cart {
+  padding-top: 48px;
+  padding-bottom: 64px;
+
+  &__title {
+    margin: 0 0 32px;
+    font-size: 32px;
+  }
+
+  &__layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 340px;
+    align-items: start;
+    gap: 48px;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+    font-size: 14px;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    button {
+      padding: 0;
+      border: none;
+      background: transparent;
+      color: #777;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+
+  &__summary {
+    padding: 28px;
+    border: 1px solid $border;
+    border-radius: 12px;
+
+    h2 {
+      margin: 0 0 28px;
+      font-size: 22px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 14px;
+    color: #777;
+
+    &--total {
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid $border;
+      color: #000;
+      font-size: 18px;
+    }
+  }
+
+  &__checkout {
+    display: block;
+    margin-top: 28px;
+    padding: 16px;
+    border-radius: 6px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.2s;
+
+    &:hover {
+      background: #333;
+    }
+  }
+
+  &__empty {
+    max-width: 420px;
+    margin: 48px auto;
+    text-align: center;
+
+    h1 {
+      font-size: 32px;
+    }
+
+    p {
+      color: #777;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    &__layout {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding-top: 32px;
+
+    &__summary {
+      padding: 24px;
+    }
+  }
+}
