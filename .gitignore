@@ -12,14 +12,13 @@ dist
 dist-ssr
 *.local
 
-# Environment and local assistant settings
+#
 .env
 .env.*
 !.env.example
-.claude/
-.codex/
 
-# Editor directories and files
+
+
 .vscode/*
 !.vscode/extensions.json
 .idea

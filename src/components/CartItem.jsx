@@ -22,7 +22,6 @@ function CartItem({ item }) {
       <div className="cart-item__quantity">
         <button
           onClick={() => setQty(item.id, item.qty - 1)}
-          aria-label={`Зменшити кількість ${item.title}`}
         >
           −
         </button>
@@ -31,7 +30,6 @@ function CartItem({ item }) {
 
         <button
           onClick={() => setQty(item.id, item.qty + 1)}
-          aria-label={`Збільшити кількість ${item.title}`}
         >
           +
         </button>
@@ -44,7 +42,6 @@ function CartItem({ item }) {
       <button
         className="cart-item__remove"
         onClick={() => removeItem(item.id)}
-        aria-label={`Видалити ${item.title} з кошика`}
       >
         <svg
           width="20"
@@ -54,7 +51,6 @@ function CartItem({ item }) {
           stroke="currentColor"
           strokeWidth="1.5"
           strokeLinecap="round"
-          aria-hidden="true"
         >
           <path d="M6 6L18 18M18 6L6 18" />
         </svg>

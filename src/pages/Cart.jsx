@@ -22,7 +22,7 @@ function Cart() {
   }
 
   return (
-    <main className="container cart">
+    <div>
       <h1 className="cart__title">Кошик</h1>
 
       <div className="cart__layout">
@@ -57,7 +57,7 @@ function Cart() {
           </Link>
         </aside>
       </div>
-    </main>
+    </div>
   );
 }
 
