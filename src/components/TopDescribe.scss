@@ -1,0 +1,29 @@
+.TopDescribe {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+
+  color: #9a9a9a;
+  font-size: 14px;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  &__arrow {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1;
+  }
+
+  &__current {
+    color: #222;
+    font-weight: 600;
+  }
+}

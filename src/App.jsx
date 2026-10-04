@@ -10,7 +10,7 @@ import Contacts from './pages/Contacts'
 import Favorites from './pages/Favorites'
 import { useState } from 'react'
 import Footer from './components/Footer'
-
+import Catalog from "./pages/Catalog"
 function App() {
   const [search, setSearch] = useState('')
 
@@ -27,6 +27,7 @@ function App() {
       <Route path='/checkout' element={<Checkout />} />
       <Route path='/about' element={<About />} />
       <Route path='/contacts' element={<Contacts />} />
+      <Route path='/catalog/:categoryId' element={<Catalog/>} />
       <Route path='/favorites' element={<Favorites />} />
       <Route path='*' element={<NotFound/>}/>
        </Routes> 

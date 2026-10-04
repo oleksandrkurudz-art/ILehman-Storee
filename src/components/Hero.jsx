@@ -11,10 +11,7 @@ function Hero() {
           <h1 className="hero__title">
             IPhone 18 <span>Pro</span>
           </h1>
-          <p className="hero__text">
-            {" "}
-            Більше можливостей у кожному дотику.
-          </p>
+          <p className="hero__text"> Більше можливостей у кожному дотику.</p>
           <Link to="/product/7" className="hero__button">
             Купуйте зараз
           </Link>

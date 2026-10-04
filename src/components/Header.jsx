@@ -22,10 +22,7 @@ function Header({ search, setSearch }) {
         </Link>
 
         <form className="header__search" onSubmit={handleSearch} role="search">
-          <button
-            type="submit"
-            className="header__search-icon"
-          >
+          <button type="submit" className="header__search-icon">
             <SearchIcon />
           </button>
 

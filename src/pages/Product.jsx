@@ -6,6 +6,7 @@ import ProductCard from "../components/ProductCard";
 import "./Product.scss";
 import { useFavorites } from "../components/FavoritesContext";
 import CartBuyButton from "../components/CartBuyButton";
+
 function Product() {
   const { id } = useParams();
   const { favorites, toggleFavorite } = useFavorites();
